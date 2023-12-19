@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "707718376516",
+    "firebase_url": "https://carpooling-a5fdb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "carpooling-a5fdb",
+    "storage_bucket": "carpooling-a5fdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707718376516:android:aee31d7327b400c7de2011",
+        "android_client_info": {
+          "package_name": "firebase.gopool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707718376516-hu6k7o6mk4jr0p7hmrfjuptugs7gro1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIVT-T827rzaiOrWlhEr8yGabSZR_BrQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707718376516-hu6k7o6mk4jr0p7hmrfjuptugs7gro1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:padding="10dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/taxi_picture"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nguyễn Văn Thắng"
+                        android:id="@+id/driverName"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:paddingBottom="6dp"
+                        android:text="0976653444"
+                        android:id="@+id/phone"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:paddingBottom="6dp"
+                        android:text="Toyota i10 | 4 seat"
+                        android:id="@+id/carNameAndSeat"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="30-H1 111"
+                        android:id="@+id/licensePlate"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:background="@color/grey"/>
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/blank_profile_picture"
+                    android:id="@+id/taxi_picture"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Cost"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                        <TextView android:id="@+id/cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="25.000 VND"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trip"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <RelativeLayout android:id="@+id/relBookingDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Date"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                        <TextView android:id="@+id/bookingDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="05/12/2023"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/originTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Expected origin"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                        <TextView android:id="@+id/expectedOrigin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="08:30"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/desTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Expected destination"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                        <TextView android:id="@+id/expectedDes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="10:30"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <ImageView android:id="@+id/location"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_location"/>
+                        <TextView android:id="@+id/origin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:layout_toRightOf="@+id/location"
+                            android:text="399 Phạm Văn Đồng, Cầu Giấy"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+                        <ImageView android:id="@+id/destinationImg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_destination"/>
+                        <TextView android:id="@+id/destination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:layout_toRightOf="@+id/destinationImg"
+                            android:text="N02-T3 Ngoại Giao Đoàn"
+                            android:textColor="@color/darkgrey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+<!--            <RelativeLayout android:id="@+id/relLayoutLeave"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginRight="15dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/participantsText"-->
+<!--                    android:text="Rời chuyến"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:textAlignment="center"/>-->
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/unJoin"-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:elevation="16dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/ic_undo" />-->
+
+<!--            </RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</merge>
